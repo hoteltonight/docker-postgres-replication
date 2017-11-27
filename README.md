@@ -3,6 +3,8 @@
 Master/Slave Postgres Replication in 30 seconds.
 
   * Quickstart: `docker-compose up`
+      * Then, use `docker ps` to find the instances and their container IDs.
+      * Next, use `docker inspect <container ID> | grep IPAddress` to find the IP address of each server you wish to connect to.
   * For production, use docker-compose, Kubernetes, Rancher, Tutum, other PaaS tooling, ... or roll your own.
   * To see container environment variable requirements, see `docker-compose.yml`.
   * To demonstrate multiple slaves:
